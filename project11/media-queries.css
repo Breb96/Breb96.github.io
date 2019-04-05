@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* CSS Document created by Breanna Bush, November 16,2017*/
+@media screen and (max-width: 1060px) {
+    .container {
+        width: 90%;
+    }
+    .half_container {
+      width: 80%;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    ul#menu li a.button {
+        padding: 20px 75px; 
+    }
+    iframe{
+        width: 100%;
+    }
+    #title-page{
+        width: 100%;
+        padding-top: 100px;
+    }
+    #splash { 
+        height: 748px;
+        background-size: 1060px;
+    }
+    p{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 767px) {
+    ul#menu li a.button {
+        padding: 20px 32px; 
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    #credits {
+        text-align: center;	
+    }
+    #title-page{
+        width: 100%;
+        padding-top: 50px;
+    }
+    #splash { 
+        height: 542px;
+        background-size: 767px;
+    }
+}
+@media screen and (max-width: 490px) {
+    ul#menu li a.button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    #title-page{
+        width: 100%;
+        padding-top: 60px;
+    }
+    #splash { 
+        height: 340px;
+        background-size: 490px;
+    }
+}
