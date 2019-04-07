@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+
+<html>
+<!-- 
+Program Name:   Seminole Movie Connection using TheMovieDB API
+Author: 
+Date: 
+Filename:   index.html
+-->
+
+    <head>
+        <script type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+        <script src="Movie.js"></script>
+    </head>
+
+    <body>
+            <div class="container">
+              <div class="jumbotron">
+                <h1 class="text-primary text-center">Seminole Movie Connection!</h1>      
+                <center><p class="text-center text-primary lead"><h3>Search for your favorite movies!</h3></p> </center>     
+            </div>  
+              
+            <p class="list-group-item-text lead text-primary text-center">Enter the Movie Name, then Click <b>Load Movie</b>:</p><br />
+            
+            <p class="list-group-item-text lead text-primary text-center"> Movie Name: <input type="text" id="movieName"></p><br />
+            
+            <center><button type="submit" class="btn-lg btn-info" id="Submit" ><span class="glyphicon glyphicon-search"></span>Load Movie</button></center>
+                
+            <br /><br />
+            
+            <div class="container">
+              <h1 class="text-primary">Movie Information:</h1>
+                <div class="list-group">
+            
+                    <!--The code below retrieves the Movie Title from the HTTP Response message and displays
+                        the title on the HTML document where the id is:  "original_title"
+                    -->
+                    <a href="#" class="list-group-item">
+                        <h3 class="list-group-item-heading">Movie Title:</h3>
+                        <p class="list-group-item-text lead text-primary" id="original_title"> </p>
+                    </a>
+             
+             
+                     <!--******************************Insert Movie Plot*********************************
+                     TASK #2:  
+                     1.  Include the code below that will display the following heading:  "Movie Plot:"
+                     2.  Create a placeholder where the id is:  "overview"
+                     
+                     HINT:  
+                     Use the Movie Title code as an example.
+                     
+                     *********************************Insert Code Below********************************-->
+                     
+                     
+                     
+                    <!--**************************Insert Movie Release Date*****************************
+                     TASK #3:  
+                     1.  Include the code below that will display the following heading:  "Release Date:"
+                     2.  Create a placeholder where the id is:  "release_date"
+                     
+                     HINT:  
+                     Use the Movie Title code as an example.
+                     
+                     *******************************Insert Code Below********************************-->
+            
+            
+            
+                    <!--**********************Insert Movie Popularity Rating***************************
+                     TASK #4:  
+                     1.  Include the code below that will display the following heading:  "Popularity Rating:"
+                     2.  Create a placeholder where the id is:  "popularity"
+                     
+                     HINT:  
+                     Use the Movie Title code as an example.
+                     
+                     *******************************Insert Code Below********************************-->
+            
+            
+            
+                    <!--*************************Insert Movie Language************************************
+                     TASK #5:  
+                     1.  Include the code below that will display the following heading:  "Language:"
+                     2.  Create a placeholder where the id is:  "original language"
+                     
+                     HINT:  
+                     Use the Movie Title code as an example.
+                     
+                     *******************************Insert Code Below********************************-->
+            
+            
+                    <!--The code below retrieves the poster URL from the HTTP Response message and displays
+                        the poster on the HTML document where the id is:  "poster_path"
+                    -->
+                    <a href="#" class="list-group-item">
+                        <h3 class="list-group-item-heading">Poster:</h3>
+                        <center><img id = "poster_path"> </img></center>
+                    </a> 
+                </div>
+            </div> 
+    
+        </body>
+</html>
