@@ -25,13 +25,13 @@ h3 {
   font-weight: bold;
 }
 a:link {
-	color: #000;
+	color: #fff;
 }
 a:visited {
-	color: #32CD32;
+	color: #2eff00;
 }
 a:hover {
-	color: #00FFEA;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -43,13 +43,13 @@ a:hover {
 }
 
 #index {
-	padding: 40px 0 60px 0;
+	padding: 10px;
    	background-color: #D3D3D3;
 	color: #222;
 }
 
 #experience {
-	padding: 40px 0 60px 0;	
+	padding: 25px;	
     background: #D3D3D3;
 	color: #222;
 }
@@ -61,15 +61,14 @@ a:hover {
 }
 
 #footer{
-    padding: 40px 0 60px 0;
-  	background-color: #D3D3D3;
+    padding: auto;
+  	background-color: #32CD32;
   	color: #222;
-  	padding: 40px;
 }
 
 /* ----------------Container Styles----------------- */
 .container {
-  width: 960px;
+  width: auto;
   margin: auto;
   overflow: hidden;
 }
@@ -103,13 +102,13 @@ ul#menu li a.button:hover {
 
 #title-page{
   width: 100%;
-  padding-top: 100px;
+  padding-top: auto;
   color: #fff;
   text-align: center;
 }
 #title-page h1 {
   font-family: 'Times New Roman', cursive;
-  font-size: 100px; 	
+  font-size: 50px; 	
   text-shadow: 3px 3px #000;
 }
 #title-page p {
