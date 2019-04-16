@@ -25,13 +25,13 @@ h3 {
   font-weight: bold;
 }
 a:link {
-	color: #fff;
+	color: #000;
 }
 a:visited {
-	color: #2eff00;
+	color: #000;
 }
 a:hover {
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -46,6 +46,7 @@ a:hover {
 	padding: 10px;
    	background-color: #D3D3D3;
 	color: #222;
+    text-align: center;
 }
 
 #experience {
@@ -53,18 +54,21 @@ a:hover {
     height: px;
     background: #D3D3D3;
 	color: #222;
+    text-align: center;
 }
 
 #resume {
 	padding: 40px 0 60px 0;	
     background-color: #D3D3D3;
 	color: #222;
+    text-align: center;
 }
 
 #footer{
     padding: 20px 20px 20px 20px;
   	background-color: #32CD32;
   	color: #222;
+    text-align: center;
 }
 
 /* ----------------Container Styles----------------- */
@@ -76,19 +80,23 @@ a:hover {
 /* -----------------Navigation Bar Styles-------------------*/ 
 
 #navbar{
-	position: fixed;
+    position: fixed;
+    text-align: center;
+    display: inline-block;
 	top: 0;
 	width: 100%;
 	height: 50px;
-	background-color: rgba(255, 255, 255, 0.8); 
+	background-color: #D3D3D3;
+    border-bottom: 2px solid #32CD32;
 }	
 ul#menu {
 	list-style: none;
-	padding-top: 0px;
+	padding-top: 20px 100px 20px 100px;
 } 
 ul#menu li {
-	float: left;
 	padding-bottom: 20px;
+    display: inline-block;
+    text-align: center;
 } 
 ul#menu li a.button {
 	font-size: 16px;
@@ -104,13 +112,12 @@ ul#menu li a.button:hover {
 #title-page{
   width: 100%;
   padding-top: auto;
-  color: #fff;
+  color: #000;
   text-align: center;
 }
 #title-page h1 {
   font-family: 'Times New Roman', cursive;
-  font-size: 50px; 	
-  text-shadow: 3px 3px #000;
+  font-size: 50px;
 }
 #title-page p {
   font-size: 19px;
@@ -132,12 +139,12 @@ ul#menu li a.button:hover {
   margin: 0;
 }
 
-/* ----------------------Misc-----------------------------*/
- /*.fltright{
+/* ----------------------Misc-------------------*/
+.fltright{
 	float:right;
 	margin: 20px;
 }
 .fltleft{
 	float:left;
 	margin: 20px 20px 20px 0;
-}*/
+}
