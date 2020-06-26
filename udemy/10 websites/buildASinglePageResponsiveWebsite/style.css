@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+#header {
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	height: 80px;
+	top: 0px;
+	left: 0px;
+	/*z-index: 2;*/
+}
+
+.nav {
+	float: right;
+	font-family: 'Arial';
+	text-transform: uppercase;
+}
+
+.nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+.nav ul li {
+	float: left;
+	list-style-type: none; /*gets rid of the bullet points*/
+	border: 1px solid #eee;
+}
+
+.nav ul li a {
+	background-color: black;
+	color: white;
+	padding: 10px; /*gives some space between the links*/
+	display: block;
+	text-decoration: none;/*gets rid of the underline*/
+}
+
+.nav ul li a:hover {
+	background-color: white;
+	color: black;
+}
+
+#minimenu {
+	display: none;
+}
+
+.section {
+	min-height: 1000px;
+	padding-top: 100px;
+	overflow: hidden;
+	/*position: relative;*/
+	font-family: 'Tangerine', cursive;
+	background-color: #dddddd;
+}
