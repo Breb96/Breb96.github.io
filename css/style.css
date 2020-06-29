@@ -28,10 +28,10 @@ a:link {
 	color: #000;
 }
 a:visited {
-	color: #FFF;
+	color: #dddddd;
 }
 a:hover {
-	color: #FFF;
+	color: #58A623;
 	text-decoration: none;
 }
 
