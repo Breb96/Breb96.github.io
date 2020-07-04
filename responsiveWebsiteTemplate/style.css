@@ -1,5 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
 body{
-	font-family: serif;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+#myitems {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#myitems li {
+	width: 100%;
+}
+
+.aboutpage input[type=text] {
+	width: 100%;
+	border: 1px solid grey;
+	border-radius: 5px;
+	background-color: darkgrey;
+	color: white;
+}
+
+h2 {
+	font-size: 1.5em;
+	line-height: 0.9em;
+	font-family: 'Dancing Script', cursive;
 }
 
 #wrapper{
@@ -9,7 +40,7 @@ body{
 footer{
 	background-color: black;
 	color: white;
-	min-height: 100px;
+	min-height: 70px;
 	padding: 45px;
 	clear: both;
 }
@@ -32,6 +63,8 @@ footer{
 	margin: 0;
 	line-height: 45px;
 }
+
+.brdone{}
 
 nav{
 	padding: 10px 0 0;
@@ -72,6 +105,7 @@ nav a:hover{
 		width: 35%;
 		background-color: darkgrey;
 		float: right;
+		padding: 5px;
 	}
 	#header nav{
 		text-align: center;
@@ -82,6 +116,11 @@ nav a:hover{
 	nav a {
 		padding: 15px; 10px;
 	}
+	#myitems li {
+        float: left;
+        width: 40%;
+        margin: 5%;
+    }
 }
 
 @media screen and (min-width:720px){
@@ -94,6 +133,7 @@ nav a:hover{
 		width: 45%;
 		float: left;
 	}
+	#header{}
 	#wrapper{
 		margin: 0 auto;
 		padding: 0 4%;

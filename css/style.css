@@ -1,150 +1,119 @@
-@charset "UTF-8";
-/* CSS Document created by Breanna Bush, October 5,2017*/
+/* CSS Document created by Breanna Bush, July 1, 2020*/
 
-/* ---------------------------HTML Tag Styles----------------------------- */
 body {
-  margin: auto;
-  padding: auto;
-  color: #333;
   font-family: 'Times New Roman', cursive;
 }
-p {
-  font-size: 20px;
-  margin-bottom: 20px;
-  line-height: 1.5em;
-}
-h1 {
-  padding: 20px 0;
-}
-h2 {
-  padding: 20px 0;
-  font-weight: bold;
-}
-h3 {
-  padding: 20px 0;
-  font-weight: bold;
-}
-a:link {
-	color: green;
-}
-a:visited {
-	color: black;
-}
-a:hover {
-	color: white;
-	text-decoration: none;
+
+/* #wrapper{
+	max-width: 1180px;
+} */
+
+#header {
+    position: fixed;
+    background-color: darkgrey;
+    width: 100%;
+    height: 40px;
+    top: 0px;
+    left: 0px;
+    /*z-index: 2;*/
 }
 
-/* --------------------------Page Sections---------------------------- */
-#splash {
-   	background: #A9A9A9;
-   	background-size: cover;  
-	height: auto;
+.nav {
+    float: right;
+    font-family: 'Arial';
+    text-transform: uppercase;
 }
 
-#index {
-	padding: 10px;
-   	background-color: #0000;
-	color: #222;
-    text-align: center;
+.nav ul {
+    padding: 0;
+    margin: 0;
 }
 
-#experience {
-	padding: 40px 0 60px 0;
-    height: px;
-    background: #dddddd;
-	color: #222;
-    text-align: center;
+.nav ul li {
+    float: left;
+    list-style-type: none;
+    border: 1px solid #eee;
 }
 
-#resume {
-	padding: 40px 0 60px 0;	
-    background-color: #0000;
-	color: #222;
-    text-align: center;
+.nav ul li a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
 }
 
-#footer{
-    padding: 5px 5px 5px 5px;
-  	background-color: #58A623;
-  	color: #222;
-    text-align: center;
+.nav ul li a:hover {
+    background-color: white;
+    color: black;
 }
 
-/* ----------------Container Styles----------------- */
-.container {
-  width: auto;
-  margin: auto;
-  overflow: hidden;
+#minimenu {
+    display: none;
+    float: right;
+    margin-right: 20px;
+    font-size: 36px;
+    margin-top: 5px;
+    cursor: pointer;
 }
-/* -----------------Navigation Bar Styles-------------------*/ 
 
-#navbar{
-    position: wrap;
-    text-align: center;
-    display: inline-block;
-	top: 0;
+#image{
+	width: 50%;
+	float: left;
+	background-color: aqua;
+	margin-top: 30px;
+	image-orientation: center;
+	text-align: center;
+}
+
+#intro{
+	width: 50%;
+	float: right;
+	background-color: blue;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#experience{
+	float: left;
+	background-color: purple;
 	width: 100%;
-	height: 50px;
-	background-color: #58A623;
-    border-bottom: 2px solid #000000;
-}	
-ul#menu {
-	list-style: none;
-	padding-top: 20px 100px 20px 100px;
-} 
-ul#menu li {
-	padding-bottom: 20px;
-    display: inline-block;
-    text-align: center;
-} 
-ul#menu li a.button {
-	font-size: 16px;
-	text-decoration: none;
-	padding: 20px 100px 20px 100px; 
-}
-ul#menu li a.button:hover {
-	background-color: rgba(42, 188, 238, 0.1);
+	text-align: center;
 }
 
-/* ----------------Title Page Styles------------------- */
-
-#title-page{
-  width: 100%;
-  padding-top: auto;
-  color: #000;
-  text-align: center;
-}
-#title-page h1 {
-  font-family: 'Times New Roman', cursive;
-  font-size: 50px;
-}
-#title-page p {
-  font-size: 19px;
-  font-style: normal;
-  margin: 0 40px;
-  padding-bottom: 0px;
+#resume{
+	float: left;
+	background-color: yellow;
+	width: 100%;
+	text-align: center;
 }
 
-/* -------------------Footer Credits--------------------- */
-
-#credits {
-  text-align: center;	
-}
-#credits table{      
-  margin: 0 auto;
-}
-#credits p {
-  font-size: 1em;
-  margin: 0;
+.section {
+    min-height: 500px;
+	/*border: 2px solid black; */
+    overflow: hidden;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
-/* ----------------------Misc-------------------*/
-.fltright{
-	float:right;
-	margin: 20px;
+footer{
+	width: 100%;
+	background-color: darkgrey;
+	color: white;
+	text-align: center;
+	clear: both;
 }
-.fltleft{
-	float:left;
-	margin: 20px 20px 20px 0;
+
+@media screen and (max-width:680px) {
+    #minimenu {
+        display: block !important;
+        float: right;
+    }
+    .nav {
+        display: none;
+        width: 100%;
+    }
+    .nav ul li {
+        width: 100%;
+        text-align: center;
+    }
 }
