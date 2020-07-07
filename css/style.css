@@ -1,16 +1,8 @@
-/* CSS Document created by Breanna Bush, July 1, 2020*/
-
-body {
-  font-family: 'Times New Roman', cursive;
-}
-
-/* #wrapper{
-	max-width: 1180px;
-} */
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
 
 #header {
     position: fixed;
-    background-color: darkgrey;
+    background-color: white;
     width: 100%;
     height: 40px;
     top: 0px;
@@ -38,7 +30,7 @@ body {
 .nav ul li a {
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: 10px 0 10px 0;
     display: block;
     text-decoration: none;
 }
@@ -57,54 +49,68 @@ body {
     cursor: pointer;
 }
 
-#image{
-	width: 50%;
-	float: left;
-	background-color: aqua;
-	margin-top: 30px;
-	image-orientation: center;
-	text-align: center;
-}
-
-#intro{
-	width: 50%;
-	float: right;
-	background-color: blue;
-	margin-top: 30px;
-	text-align: center;
-}
-
-#experience{
-	float: left;
-	background-color: purple;
-	width: 100%;
-	text-align: center;
-}
-
-#resume{
-	float: left;
-	background-color: yellow;
-	width: 100%;
-	text-align: center;
-}
-
 .section {
-    min-height: 500px;
-	/*border: 2px solid black; */
+    background-color: beige;
+    min-height: 100px;
+    padding-top: 25px;
     overflow: hidden;
+    /*position: relative;*/
     font-family: 'Gloria Hallelujah', cursive;
+	text-align: center;
+}
+
+.section article {
+    padding: 15px;
+	text-align: center;
+    background-color: lightsteelblue;
 }
 
 footer{
-	width: 100%;
-	background-color: darkgrey;
-	color: white;
+	background-color: beige;
 	text-align: center;
-	clear: both;
 }
 
 @media screen and (max-width:680px) {
+    #home {
+        background-color: beige;
+    }
     #minimenu {
+        display: block !important;
+        float: right;
+    }
+    .nav {
+        display: none;
+        width: 100%;
+    }
+    .nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:640px) {
+    #home {
+        background-color: beige;
+    }
+	#minimenu {
+        display: block !important;
+        float: right;
+    }
+    .nav {
+        display: none;
+        width: 100%;
+    }
+    .nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #home {
+        background-color: beige;
+    }
+ 	#minimenu {
         display: block !important;
         float: right;
     }
