@@ -1,0 +1,135 @@
+body{
+    background-color: #eee;
+}
+
+a{
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:hover{
+    color: cornflowerblue;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    background-color: white;
+}
+
+.brd{
+    border: 1px solid black;
+}
+
+#logo{
+    float: left;
+    width: 40%;
+    text-align: left;
+    margin: 0;
+}
+
+#logo div{
+    color: red;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+#logo small{
+    color: coral;
+    font-size: 0.8em;
+}
+
+#navbar{
+    float: left;
+    width: 60%;
+    text-align: right;
+}
+
+#navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li{
+    display: inline-block;
+    margin: 0 2px;
+}
+
+#navbar a{
+    display: block;
+    text-decoration: none;
+    color: azure;
+    background-color: black;
+    padding: 6px;
+}
+
+#navbar a:hover,
+#navbar a.active{
+    color: black;
+    background-color: red;
+}
+
+#welcome{
+    padding: 30px 0;
+    margin: 30px 0;
+    background-color: #ddd;
+    border-radius: 15px;
+
+}
+
+.welcomeHeader{
+    font-size: 2em;
+    padding: 10px;
+}
+
+#welcome p{
+    font-size: 1em;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.content{
+    float: left;
+    width: 60%;
+}
+
+.sidemenu{
+    background-color: #eee;
+    float: right;
+    width: 40%;
+    padding: 5px;
+}
+
+#footer{
+    clear: both;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 5px;
+}
+
+.fa-bars{
+    font-size: 2em;
+}
+
+#minimenu{
+    display: none;
+}
+
+@media only screen and (max-width:700px){
+    .container{}
+    .content{
+        float: none;
+        width: 100%;
+    }
+    .sidemenu{
+        float: none;
+        width: 100%;
+    }
+    #minimenu{
+        display: block;
+    }
+}
+
