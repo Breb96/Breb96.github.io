@@ -41,37 +41,6 @@ img{
     font-size: 0.8em;
 }
 
-#navbar{
-    float: left;
-    width: 60%;
-    text-align: right;
-}
-
-#navbar ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#navbar li{
-    display: inline-block;
-    margin: 0 2px;
-}
-
-#navbar a{
-    display: block;
-    text-decoration: none;
-    color: azure;
-    background-color: black;
-    padding: 6px;
-}
-
-#navbar a:hover,
-#navbar a.active{
-    color: black;
-    background-color: red;
-}
-
 #welcome{
     padding: 30px 0;
     margin: 30px 0;
@@ -114,14 +83,8 @@ img{
     font-size: 2em;
 }
 
-#minimenu{
-    display: none;
-}
-
 @media only screen and (max-width:700px){
-    .container{
-        background-color: green;
-    }
+    .container{}
     .content{
         float: none;
         width: 100%;
@@ -130,8 +93,8 @@ img{
         float: none;
         width: 100%;
     }
-    #minimenu{
-        display: block;
+    #logo{
+        width: 80%;
     }
 }
 
