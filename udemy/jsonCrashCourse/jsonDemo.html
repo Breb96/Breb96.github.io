@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>JSON Demo</title>
+        <script>
+            var car_obj = {make: "Toyota", model: "corolla", year: 2004};
+            function ShowMessage()
+            {
+                /*var json_string = document.getElementById("txt_JSON").value;
+                var json_obj = JSON.parse(json_string);
+                alert(json_obj.children[1].age);*/
+                /*alert(JSON.stringify(car_obj));*/
+                document.getElementById("txt_JSON").value = JSON.stringify(car_obj);
+            }
+        </script>
+    </head>
+    <body>
+        <textarea style="width: 500; height: 300;" id="txt_JSON"></textarea>
+<br/><input type="button" value="Test Function" onclick="ShowMessage()"/>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "action" : "save_to_database",
+    "first_name" : "Alireza",
+    "last_name" : "Aliabadi",
+    "email" : "alireza@email.biz",
+    "course" : "JSON Crash course",
+    "enrollment_fee" : 57,
+    "paid" : false
+}

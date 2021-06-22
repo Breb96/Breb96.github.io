@@ -1,0 +1,20 @@
+.nav {
+  background-color: #383838; }
+  .nav a:hover {
+    color: gray; }
+
+.nav-left a {
+  color: #fff;
+  font-weight: bold; }
+
+a.r-item {
+  color: #C1C1C1;
+  padding: 0.5rem 1.75rem; }
+  @media screen and (max-width: 768px) {
+    a.r-item {
+      color: gray; }
+      a.r-item:hover {
+        background-color: #F1F1F1; } }
+
+.nav-toggle span {
+  background-color: #C1C1C1; }

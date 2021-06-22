@@ -1,0 +1,27 @@
+.hero {
+  background: url("../../assets/clouds.jpg");
+  background-size: cover; }
+  @media screen and (max-width: 768px) {
+    .hero .title {
+      font-weight: bold; } }
+  @media screen and (min-width: 769px), print {
+    .hero .title {
+      font-size: 2.5rem; } }
+  @media screen and (min-width: 1000px) {
+    .hero .title {
+      font-size: 4rem;
+      margin-top: 2rem; } }
+
+h2 {
+  margin: 1.5rem 0 2rem 0 !important; }
+
+.fa-cog {
+  font-size: 40px; }
+
+@media screen and (min-width: 1000px) {
+  #learn {
+    margin-bottom: 2rem; } }
+
+@media screen and (min-width: 769px), print {
+  .pd {
+    padding: 2em 0; } }
