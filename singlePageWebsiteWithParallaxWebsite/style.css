@@ -4,6 +4,10 @@ html{
     font-family: 'Lobster Two';
 }
 
+img{
+    max-width: 100%;
+}
+
 a{
     color: darkblue;
     text-decoration: none;
@@ -35,6 +39,7 @@ a:hover {
 #menu .navicon{
     display: none;
     font-size: 2em;
+    float: right;
 }
 
 #menu nav{
@@ -113,17 +118,46 @@ a:hover {
     background-color: darkgray;
 }
 
+#portfolio ul li{
+    display: inline-block;
+    width: 48%;
+    min-height: 200px;
+}
+
+#portfolio ul{
+    padding: 10px;
+    list-style-type: none;
+}
+
 #contact{
     background-image: url(http://lorempixel.com/1200/600/people);
     background-color: white;
 }
 
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 200px;
+}
+
+.navicon{
+    display: none;
+    font-size: 2em;
+}
+
 @media screen and (max-width:640px) {
-    .navicon{
+    #menu .navicon{
         display: block;
     }
     #menu nav{
-        display: none;
+        /*display: none;*/
+        width: 100%;
+    }
+    #menu nav ul li{
+        width: 100%;
+    }
+    #portfolio ul li{
         width: 100%;
     }
 }
