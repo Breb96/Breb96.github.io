@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* CSS Document created by Breanna Bush, October 5,2017*/
+
+/* ---------------------------HTML Tag Styles----------------------------- */
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #333;
+  font-family: 'Yatra One', cursive;
+}
+p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+h1 {
+  padding: 20px 0;
+}
+h2 {
+  padding: 20px 0;
+  font-weight: bold;
+}
+h3 {
+  padding: 20px 0;
+  font-weight: bold;
+}
+table {
+	border: solid #000 2.5px;
+	border-collapse:collapse;
+}
+a:link {
+	color: #000;
+}
+a:visited {
+	color: #FF19E4;
+}
+a:hover {
+	color: #00FFEA;
+	text-decoration: none;
+}
+
+/* --------------------------Page Sections---------------------------- */
+#splash {
+   	background: url(images/splash.png) no-repeat center top fixed;
+   	background-size: cover;  
+	height: 1000px;
+	
+}
+
+#overview {
+	padding: 40px 0 60px 0;
+   	background-color: #00FFEA;
+	color: #fff;
+}
+
+#media {
+	padding: 40px 0 60px 0;	
+    background: url(images/media_blur.png) no-repeat center top fixed;
+	color: #fff;
+}
+
+#references_and_author {
+	padding: 40px 0 60px 0;	
+    background-color: #00FFEA;
+	color: #222;
+}
+
+#footer{
+  	background-color: #C3C4C5;
+  	color: #fff;
+  	padding: 20px 0;
+
+}
+
+/* ----------------Container Styles----------------- */
+.container {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.half_container {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+/* -----------------Navigation Bar Styles-------------------*/ 
+
+#navbar{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 54px;
+	background-color: rgba(255, 255, 255, 0.8); 
+}	
+ul#menu {
+	list-style: none;
+	padding-top: 0px;
+} 
+ul#menu li {
+	float: left;
+	padding-bottom: 20px;
+} 
+ul#menu li a.button {
+	font-size: 16px;
+	text-decoration: none;
+	padding: 20px 100px 20px 100px; 
+}
+ul#menu li a.button:hover {
+	background-color: rgba(42, 188, 238, 0.1);
+}
+
+/* ----------------Title Page Styles------------------- */
+
+#title-page{
+  width: 100%;
+  padding-top: 100px;
+  color: #fff;
+  text-align: right;
+}
+#title-page h1 {
+  font-family: 'Yatra One', cursive;
+  font-size: 80px; 	
+  text-shadow: 3px 3px #000;
+}
+#title-page h3 {
+  font-size: 3em;
+  font-style: italic;
+  margin: 0 40px;
+  padding-bottom: 20px;
+  text-shadow: 2px 2px #000;
+}
+
+/* -------------------Footer Credits--------------------- */
+
+#credits {
+  text-align: center;	
+}
+#credits table{      
+  margin: 0 auto;
+}
+#credits p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+/* ----------------------Misc-----------------------------*/
+.fltright{
+	float:right;
+	margin: 20px;
+}
+.fltleft{
+	float:left;
+	margin: 20px 20px 20px 0;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      Course Name:  Web Application Development
+      Lesson 5:  JavaScript 2
+      Project Title: Income Tax Calculator 
+      Filename: index.html
+
+      Author: Breanna Bush
+      Date: February 27, 2018  
+   -->
+   <meta charset="utf-8" />
+   <meta id="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <title>Tax Bracket Calculator</title>    
+    
+   <link rel="stylesheet" href="styles.css" />
+    
+   <script src="taxBracket_Calculator.js"></script>
+
+    
+</head>
+
+<body>
+   
+   <header>
+      <h1>
+         Tax Bracket Calculator
+      </h1>
+   </header>
+
+   <article>
+      <h2>Estimate Your 2018 Tax Rate:</h2>
+      
+      <form class = "bs-example bs-example-form" role = "form">
+         <fieldset id="taxableIncome">
+            <legend>What is my tax bracket?</legend>
+            Find out which IRS tax bracket you are in. As a percentage of income, 
+            your tax rate is generally lower than the tax rate listed. 
+            Use this calculator to estimate your actual tax rate and tax amount.
+            <br><br>
+
+            <label for="incomeInput"><br><b>Filling Status:</b> </label><br>
+            <select id="filingStatus" name="filingStatus" required="required">
+               <option value="0">Single</option>
+               <option value="1">Married filing jointly</option>
+               <option value="2">Married filing separately</option>
+               <option value="3">Head of Household</option>
+            </select>
+        
+            <br><br>
+            <label for="incomeInput"><b> Taxable Income:</b>  <br>  
+            <span class="input-group-addon">$</span>
+              <input type="text"  id="incomeInput" name="income"  />
+              <span class="input-group-addon">.00</span>
+            </label>
+    
+        <!--************************************************************************************************
+        *  This section in the HTML code creates TWO buttons:  1)  Calculate Tax and
+        *  2)  Clear Calculator button.  
+        *
+        *  Explanation:  The onclick method is used to associate an event with each button.  When the
+        *  user clicks either button, the methods stated will be executed to handle that event.  For instance,
+        *  when the user clicks the 'Calculate Tax' button the calculateTax() code will 
+        *  execute and when the user clicks the 'Clear Calculator' button, the clearButton() method will execute.
+        *
+        *  The onClick event will execute when a button is clicked.
+        **************************************************************************************************-->        
+        
+            <fieldset id="submitbutton">
+               <button type="button" id="submitBtn" onclick="calculateTax()">Calculate Tax</button>
+
+               <button type="button" id="clearBtn" onclick="clearButton()">Clear Calculator </button>
+            </fieldset>
+
+         </fieldset>
+         
+         <!--************************************************************************************************
+        *  This section in the HTML code defines id's or placeholders where the result of the calculations
+        *  and tax bracket will be place.  The getElementById() method used later in the program uses these id's 
+        *  to place the results of the calculations on the HTML page.
+        *   
+        *  The id's defined are:  taxEstimates and taxBracket.
+        **************************************************************************************************-->   
+                 
+         <fieldset id="summary">
+             <legend><span>Your tax year 2018 tax rate:</span></legend>
+            
+             <fieldset id="calculationinfo">
+                <label>  
+                    <p id="taxEstimate">  </p>
+                    <p id="taxBracket">  </p>
+                </label>  
+             </fieldset>
+          
+          <br><br>
+            
+            <center>To view an example of a tax bracket calculator, visit:  <a href="https://www.taxact.com/tools/tax-bracket-calculator" target="_blank">https://www.taxact.com/tools/tax-bracket-calculator</a></center>
+
+        </fieldset>
+      </form>
+   </article>
+   
+    
+  </body>
+</html>

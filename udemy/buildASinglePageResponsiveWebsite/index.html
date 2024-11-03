@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+    <!--
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div id="menu">
+            <div id="branding"></div>
+            <div id="minimenu"><i class="fa fa-bars"></i></div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="container">
+        <!-- This is the Home section -->
+        <section id="home" class="section">
+            <header>
+                <h1>Home</h1>
+                <h2>welcome to my website</h2>
+            </header>
+            <article>
+                <p>I am an alumna of the Florida State University, with a bachelor's degree in Information Communication & Technology.</p>
+
+                <p>I am seeking an entry-level full-time opportunity, preferably remote due to COVID-19.</p>
+
+                <p>This is website one of ten from an online course.</p>
+
+                <p>Feel free to take a look around and do not hesitate to contact me and please leave feedback.</p>
+            </article>
+        </section>
+        <!-- This is the About section -->
+        <section id="about" class="section">
+
+            <header>
+                <h2>About</h2></header>
+            <article>
+                <p>This website is about building a single page repsonsive website.</p>
+
+                <p>HTML, CSS, JavaScript, and jQuery are the only languages used for the creation of this website.</p>
+                
+                <p>This website was created along with 9 others while completing an online course from <a href="Udemy.com">Udemy.</a></p>
+                
+                <p><img src="img/udemy.png"></p>
+
+                <p><a href="https://www.udemy.com/course/ultimate-web-developer-course-build-10-websites-from-scratch/">How to create Websites Build 10 Websites From Scratch</a> by Laurence Svekis</p>
+            </article>
+        </section>
+        <!-- This is the Projects section -->
+        <section id="projects" class="section">
+            <header>
+                <h2>Projects</h2></header>
+            <article>
+                <ul>
+                    <li><a href="index.html" target="_blank" class="button">Build a Single Page Responsive Website</a></li>
+                    <li><a href="responsiveWebsiteTemplate/index.html" target="_blank" class="button">Responsive Website Template</a></li>
+                    <li><a href="twoColumnResponsiveWebsiteTemplate/index.html" target="_blank" class="button">Two Column Responsive Website Template</a></li>
+                    <li><a href="simpleBootstrapMenuWebsite/index.html" target="_blank" class="button">Single Bootstrap Menu Website</a></li>
+                    <li><a href="" target="_blank" class="button">Single Page website with Parallax Website</a></li>
+                    <li><a href="" target="_blank" class="button">Single Page Carousel Control Website</a></li>
+                    <li><a href="" target="_blank" class="button">Multiple Page website from scratch with active class</a></li>
+                    <li><a href="" target="_blank" class="button">Single Page Bottom Menu Website</a></li>
+                    <li><a href="" target="_blank" class="button">New Bootstrap 4 Version Single Page Website</a></li>
+                    <li><a href="" target="_blank" class="button">Simple Bootstrap 4 Website Bottom Navbar</a></li>
+
+                </ul>
+            </article>
+        </section>
+        <!-- This is the Contact section -->
+        <section id="contact" class="section">
+            <header>
+                <h2>Contact</h2></header>
+            <article>
+                <p>Please do not hesistate to reach out for work inquiries, to leave feedback, or if you would like to collab on a few projects.</p>
+                <a href="mailto:DevelopmentByBre@gmail.com" target="_blank" class="icon">
+                    <span>Email</span>
+                </a>
+                <br>
+                <a href="https://www.linkedin.com/in/breanna-bush" target="_blank" class="icon">
+                    <span>LinkedIN</span>
+                </a>
+                <br>
+                <a href="https://github.com/Breb96" target="_blank" class="icon">
+                    <span>GitHub</span>
+                </a>
+                <br>
+                <a href="tel:‭8503225129" target="_blank" class="icon">
+                    <span>Cell Phone</span>
+                </a>
+            </article>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#minimenu').click(function () {
+                $('.nav').slideToggle();
+            });
+
+            $(window).bind('resize', function () {
+                if ($('#minimenu').css('display') == 'none') {
+                    $('.nav').show();
+                } else {
+                    $('.nav').hide();
+                }
+            });
+
+            $('.nav li a').click(function (event) {
+                var targetSection = $(this).attr('href');
+                var scrTo = $(targetSection).offset().top;
+                $('html, body').animate({
+                    scrollTop: scrTo
+                }, 1000)
+                console.log($('#minimenu').css('display'));
+                if ($('#minimenu').css('display') == 'block') {
+                    $('.nav').slideUp();
+                }
+                event.preventDefault();
+            });
+
+        })
+    </script>
+</body>
+
+</html>

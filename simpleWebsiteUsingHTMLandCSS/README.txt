@@ -1,1 +1,0 @@
-This site is one of 10 projects in my Udemy course. The focus was mainly on HTML and CSS.

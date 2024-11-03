@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!--
+          Course:  Web Application Development
+          Assignment:  Lesson 4 (JavaScript 1)
+          Author: Breanna Bush 
+          Date: February 13, 2018  
+          Filename: index.html
+       -->
+       <meta charset="utf-8" />
+       <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+       <title>Lesson 4 Assignment</title>
+
+       <link rel="stylesheet" href="styles.css" />
+
+    </head>
+
+    <body>
+       <header>
+          <h1> Lesson 4 Assignment </h1>
+       </header>
+
+        <article>
+            <br /><h2>Monthly Expense Calculator</h2><br />
+
+              <form id = "expenseCalculator">          
+                <fieldset id="inputinfo">
+                      <legend><span>Instructions:</span></legend>
+                      <p>The expense calculator will determine your total living expenses and 
+                      show the percentage of the total expenses spent for each category (food, shelter, etc.).</p>
+
+                      <br>
+
+                      <p>Please enter the amounts (in dollars) for each expense category for one month.  
+                      For example, for the Category - <b>Shelter</b> the user may enter the expense amount <b>500.00</b>.</p>
+
+                      <br><br><br>
+
+                      <p><h3>Expense Category Name:</h3>
+
+                          <label for="shelterInput">
+                            Shelter (mortgage, rent, taxes, etc.):         
+                            <input type="text"  id="shelterInput" name="shelter"  />
+                          </label>
+                      </p>
+                      <p><label for="foodInput">
+                            Food (grocery, dining out, etc.):
+                            <input type="text" id="foodInput" name="food" />
+                          </label>
+                      </p>
+
+                      <!--************************************************************************************************
+                      * Task #1:  Add additional expense categories using the above code as an example.  The 
+                      *           following categories should be included:  Household, Transportation, and 
+                      *           Miscellaneous.  Add your code below this comment block BEFORE the </fieldset> tag!!!
+                      * REMINDERS:  
+                      *      1.)  Each id value must be unique and enclosed in quotes.  This value will be referenced
+                      *           later in the program and it must match EXACTLY including the case.
+                      *      2.)  Each name value must be unique and enclosed in quotes.  This value will be referenced
+                      *           later in the program and it must match EXACTLY including the case.
+                      *	
+                      * HINT:  Use the following variable names:  householdInput, miscellaneousInput, transportationInput
+                      *
+                      *************************************************************************************************-->
+                        <p><label for="householdInput">
+                            Household (utilities, cell phone, cable, maintenance, etc.):
+                            <input type="text" id="householdInput" name="household" />
+                        </label>
+                        </p>
+                        <p><label for="transportationInput">
+                            Transportation (public transportation, parking, gas, etc.):
+                            <input type="text" id="transportationInput" name="transportation" />
+                        </label>
+                        </p>
+                        <p><label for="miscellaneousInput">
+                            Miscellaneous (magazines, child care, etc.):
+                            <input type="text" id="miscellaneousInput" name="miscellaneous" />
+                        </label>
+                        </p>
+                        
+                </fieldset>            
+
+
+                <!--************************************************************************************************
+                *  This section in the HTML code defines id's or placeholders where the result of the percentages
+                *  calculated will be place.  The getElementById() method used later in the program uses these id's 
+                *  to place the results of the calculations on the HTML page.
+                **************************************************************************************************-->          
+                <fieldset id="summary">
+                  <legend><span>Percentage:</span></legend>
+                  <fieldset id="calculationinfo">
+                    <legend>Calculations</legend>
+
+                     <label>                  
+                         <p id="totalExpenses">  </p>
+                         <p id="shelterPercentage">  </p>
+                         <p id="foodPercentage">  </p>
+                         <p id="householdPercentage">  </p>
+                         <p id="transportationPercentage">  </p>
+                         <p id="miscellaneousPercentage">  </p>
+                     </label>              
+                  </fieldset>
+                </fieldset>
+
+
+                <!--************************************************************************************************
+                *  This section in the HTML code creates TWO buttons:  1)  Convert Expense $ to % button and
+                *  2)  Clear Form button.  
+                *
+                *  Explanation:  The onclick method is used to associate an event with each button.  When the
+                *  user clicks either button, the methods stated will be executed to handle that event.  For instance,
+                *  when the user clicks the 'Convert Expense $ to %' button the calculatePercentages() code will 
+                *  execute and when the user clicks the 'Clear Form' button, the clearForm() method will execute.
+                *
+                *  The onClick event will execute when a button is clicked.
+                **************************************************************************************************-->
+                <fieldset id="calculatebutton">
+                  <button type="button" onclick="calculatePercentages()"> Convert Expense $ to % </button>
+                  <button type="reset" onclick="clearForm()"> Clear Form </button>
+                </fieldset> 
+            </form>    
+        </article>    
+    <script src="expenseCalculator.js"> </script>
+    </body>
+</html>
+
+
